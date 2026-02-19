@@ -1,11 +1,11 @@
 # Live_Messaging_App
-A real-time multi-user chat application built with Java 17, TCP sockets, and Swing. Features public and private messaging, concurrent client handling with a thread pool, JSON-based communication using Gson, and a modern FlatLaf UI. Demonstrates client-server architecture and thread-safe design.
+A real-time multi-user chat application built with Java, TCP sockets, and Swing. Features public and private messaging, concurrent client handling with a thread pool, JSON-based communication using Gson, and a modern FlatLaf UI. Demonstrates client-server architecture and thread-safe design.
 
 # 💬 Live Messaging App
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-17+-orange?style=for-the-badge&logo=java)
+![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge)
 ![Maven](https://img.shields.io/badge/Maven-3.6+-blue?style=for-the-badge&logo=apache-maven)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
@@ -52,7 +52,7 @@ Live Messaging App is a feature-rich, real-time chat application that demonstrat
 - Multi-threaded server with thread pool (100 threads)
 - Non-blocking I/O operations
 - JSON-based message protocol with Gson
-- Custom LocalDateTime adapter for Java 17 compatibility
+- Custom LocalDateTime adapter for Java compatibility
 - Automatic reconnection handling
 - Comprehensive error handling and logging
 - SLF4J logging integration
@@ -88,7 +88,7 @@ Live Messaging App is a feature-rich, real-time chat application that demonstrat
 
 ### Prerequisites
 
-- **Java 17** or higher ([Download](https://www.oracle.com/java/technologies/downloads/))
+- **Java** or higher ([Download](https://www.oracle.com/java/technologies/downloads/))
 - **Maven 3.6+** ([Download](https://maven.apache.org/download.cgi))
 
 ### Quick Start
@@ -227,7 +227,7 @@ run-client.bat         # Start client
 | **LoginDialog** | Connection authentication interface |
 | **Message** | Data model for all message types with JSON serialization |
 | **User** | User data model with online status tracking |
-| **LocalDateTimeAdapter** | Custom Gson adapter for Java 17 compatibility |
+| **LocalDateTimeAdapter** | Custom Gson adapter for Java compatibility |
 
 ### Message Protocol
 
@@ -455,7 +455,7 @@ mvn clean package
 
 **Problem: "Module access error with Gson/LocalDateTime"**
 - Already fixed in this version
-- Uses custom `LocalDateTimeAdapter` for Java 17 compatibility
+- Uses custom `LocalDateTimeAdapter` for Java  compatibility
 
 **Problem: "Type mismatch: Style vs SimpleAttributeSet"**
 - Already fixed in this version
@@ -463,8 +463,6 @@ mvn clean package
 
 **Problem: Build fails**
 ```bash
-# Check Java version (must be 17+)
-java -version
 
 # Update Maven dependencies
 mvn clean install -U
